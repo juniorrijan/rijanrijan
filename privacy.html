@@ -1,0 +1,422 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://electro-bazzar.com",
+        "logo": "https://i.ibb.co/6RNT2Rm4/electro-bazzar-logo.jpg",
+        "name": "Electro-Bazzar",
+        "description": "Your one-stop shop for premium electronics and gadgets in Nepal.",
+        "sameAs": [
+          "https://facebook.com/electrobazzar",
+          "https://instagram.com/electrobazzar"
+        ]
+      }
+      </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Electro-Bazzar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="" href="379907369_731692655641513_7342960460164979974_n.jpg" />
+
+  <title>Privacy Policy | Electro-Bazzar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #19173a, #1e1a42);
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #000;
+      border-bottom: 2px solid #eb0d76;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00ff91;
+      z-index: 2;
+    }
+    .logo span {
+      color: #00aaff;
+    }
+
+    /* Centered Navigation */
+    nav {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      bottom: -5px;
+      left: 0;
+      background-color: cyan;
+      transition: width 0.3s;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Rest of your existing CSS remains exactly the same */
+    .scroll-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background-color: cyan;
+      color: black;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 999;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .scroll-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .scroll-to-top:hover {
+      transform: translateY(-5px);
+      background: var(--main-color);
+      color: rgb(255, 18, 18);
+    }
+
+    .scroll-to-top svg {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.3s ease;
+    }
+
+    .scroll-to-top:hover svg {
+      transform: translateY(-3px);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 100px auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #00ff91;
+      transition: 0.3s ease-in-out;
+    }
+    .container:hover {
+      box-shadow: 0 0 35px #00ff91, 0 0 15px #00aaff;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #00ff91;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #00aaff;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #ddd;
+    }
+
+    a {
+      color: #00ff91;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Mobile menu styles */
+    .menu-toggle {
+      display: none;
+      cursor: pointer;
+    }
+    
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      nav {
+        position: static;
+        transform: none;
+        display: none;
+        width: 100%;
+        margin-top: 15px;
+      }
+      nav.active {
+        display: flex;
+      }
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    /* Footer styles (unchanged from your original) */
+   .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+      gap: 30px;
+    }
+    .footer {
+      padding: 40px 20px;
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      border-top: 2px solid #dfdfdf; 
+    }
+    .footer-section {
+      flex: 1 1 300px;
+    }
+
+    .footer-section h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .footer-section h2 .logo {
+      color: #06e106;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 10px;
+      color: #1cda68;
+    }
+
+    .footer-section p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-section ul li a {
+      text-decoration: none;
+      color: #f8e8e8;
+      transition: color 0.3s;
+    }
+
+    .footer-section ul li a:hover {
+      color: #568ae2;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 15px;
+      font-size: 14px;
+      color: hsl(0, 12%, 78%);
+    }
+
+    .footer-bottom .footer-links {
+      margin-bottom: 10px;
+    }
+
+    .footer-bottom .footer-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #66d766;
+      font-weight: 500;
+    }
+
+    .footer-bottom .footer-links a:hover {
+      text-decoration: underline;
+    }
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+      display: flex;
+    }
+    .social-section {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .social-section h2 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .social-link {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      color: #ebe1e1;
+      font-size: 18px;
+      text-decoration: none;
+    }
+    .social-link img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="scroll-to-top" id="scrollToTop">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 4l-8 8h5v8h6v-8h5z"/>
+    </svg>
+  </div>
+
+  <header>
+    <div class="logo">Electro-<span>Bazzar</span></div>
+    
+    <div class="menu-toggle" id="mobileMenu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </div>
+    
+    <nav id="mainNav">
+      <a href="real.html">HOME</a>
+      <a href="shop.html">SHOP</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="about.html">ABOUT-US</a>
+    </nav>  
+  </header>
+
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> July 6, 2025</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We collect personal information you provide directly to us when you use our services, including name, email, and payment details.</p>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>We use your information to provide, maintain, and improve our services, respond to your requests, and send promotional communications.</p>
+
+    <h2>3. Sharing of Information</h2>
+    <p>We do not sell your personal information. We may share data with trusted third parties to provide essential services and comply with legal requirements.</p>
+
+    <h2>4. Your Rights</h2>
+    <p>You have the right to access, update, or delete your personal information. Contact us if you wish to exercise these rights.</p>
+
+    <h2>5. Cookies</h2>
+    <p>We use cookies to enhance your browsing experience. You can control cookie settings through your browser.</p>
+
+    <h2>6. Data Security</h2>
+    <p>We implement reasonable measures to protect your information from unauthorized access or disclosure.</p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Please review it periodically for any changes.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:aryalreezon87@gmail.com">aryalreezon87@gmail.com</a>.</p>
+  </div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h2><span style="color: rgb(12, 203, 12);">Electro</span>-Bazzar</h2>
+      <h4>🛒 About <strong>Electro-Bazaar</strong></h4>
+      <p><strong>Electro-Bazaar</strong> is your reliable online shopping destination, offering a wide range of quality products at great prices. We ensure secure payments 🔒, fast delivery 🚛, and excellent customer support 💬 to make your shopping experience easy and enjoyable.</p>
+    </div>
+
+    <div class="footer-section links">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="real.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="#">Privacy policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contact">
+      <h4>Get in touch</h4>
+      <p>+9779867741488</p>
+      <p>+9779764514855</p>
+      <p>aryalreezon87@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-links">
+      <a href="privacy.html">Return Policy</a>
+      <a href="location.html">Location</a>
+      <a href="#">Terms of Service</a>
+    </div>
+    <p>© 2025 Electro-Bazzar. All Rights Reserved.</p>
+  </div>
+</footer>
+  <script>
+    // Scroll-to-top functionality
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('visible');
+      } else {
+        scrollToTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Mobile menu toggle
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mainNav = document.getElementById('mainNav');
+
+    mobileMenu.addEventListener('click', () => {
+      mainNav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
